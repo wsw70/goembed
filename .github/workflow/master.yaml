@@ -1,0 +1,10 @@
+name: note
+on: push
+jobs:
+  all:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v2
+      - name: Build
+      - run: go build -v
