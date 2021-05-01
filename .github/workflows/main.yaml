@@ -5,5 +5,5 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-go@v2
       - run: go build -v
